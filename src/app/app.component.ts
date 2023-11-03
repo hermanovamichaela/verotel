@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IframeButtonComponent } from './iframe-button/iframe-button.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Verotel';
+  @Input() openImage: boolean = false;
+
+  public showImg: boolean = false;
 }
